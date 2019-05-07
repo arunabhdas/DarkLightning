@@ -239,7 +239,9 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
+				Base,
 			);
 			mainGroup = 20D9FAF808EEF7100204ECE2;
 			productRefGroup = 9574022A698619FC9DF154A3 /* Products */;
@@ -261,7 +263,6 @@
 		B4CCE5AD1ECB51DE00E44C98 /* iOS.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			name = iOS.framework;
 			path = DarkLightning.framework;
 			remoteRef = B4CCE5AC1ECB51DE00E44C98 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -283,7 +284,7 @@
 		B4CCE5B31ECB51DE00E44C98 /* tvOS.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = tvOS.framework;
+			path = DarkLightning.framework;
 			remoteRef = B4CCE5B21ECB51DE00E44C98 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};

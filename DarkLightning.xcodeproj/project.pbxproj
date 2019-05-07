@@ -250,7 +250,7 @@
 		92C933267FE378EE72A72B79 /* DevicePortSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DevicePortSpec.swift; sourceTree = "<group>"; };
 		94959069E776E9070F15DF93 /* NetworkUInt16.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkUInt16.swift; sourceTree = "<group>"; };
 		988D713FFAA47B0A2067BCE6 /* StreamDelegateFake.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StreamDelegateFake.swift; sourceTree = "<group>"; };
-		99611684723BCA374D291E65 /* iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = iOS.framework; path = DarkLightning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99611684723BCA374D291E65 /* DarkLightning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DarkLightning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A400BA151AABC7538E68A26 /* CachedDevicesSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CachedDevicesSpec.swift; sourceTree = "<group>"; };
 		9B87A03DE6688671269DB06E /* DisconnectStreamReaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DisconnectStreamReaction.swift; sourceTree = "<group>"; };
 		9BA48BEDE4F0C87AAB751BAC /* Debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
@@ -369,7 +369,7 @@
 		34CC5A1C8445EEEAEC11D4F0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				99611684723BCA374D291E65 /* iOS.framework */,
+				99611684723BCA374D291E65 /* DarkLightning.framework */,
 				FB3FEF581B0A0B97C24E1829 /* DarkLightning.framework */,
 				8E1B43C81F5027CBCBC5B4E9 /* Tests.xctest */,
 				91928CBCE1744FA0CAD337B0 /* DarkLightning.framework */,
@@ -709,7 +709,7 @@
 			);
 			name = iOS;
 			productName = iOS;
-			productReference = 99611684723BCA374D291E65 /* iOS.framework */;
+			productReference = 99611684723BCA374D291E65 /* DarkLightning.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		62AFD051A581325F8F7B8152 /* OSX */ = {
@@ -771,12 +771,23 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					1F8C8CC4E15A05B8D6048188 = {
+						DevelopmentTeam = G7Y435RZV6;
+						ProvisioningStyle = Automatic;
+					};
+					62AFD051A581325F8F7B8152 = {
+						DevelopmentTeam = G7Y435RZV6;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = A4E5E594CF6E369645D2D64C /* Build configuration list for PBXProject "DarkLightning" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = AF89140B7C090EF591E64B47;
@@ -1003,6 +1014,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 09107935092271F1FB036BC6 /* Debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G7Y435RZV6;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1017,6 +1033,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AB9F01448C90A9F58F7989C1 /* Debug.xcconfig */;
 			buildSettings = {
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1024,6 +1041,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0F767348F77BB9E42DA9B119 /* Release.xcconfig */;
 			buildSettings = {
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -1031,6 +1049,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E0B9A97F5DBFCAC0E03539B2 /* Release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G7Y435RZV6;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1038,6 +1061,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9BA48BEDE4F0C87AAB751BAC /* Debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G7Y435RZV6;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1045,6 +1073,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 48F275A8DFA2BCCEEB0CBFCD /* Release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G7Y435RZV6;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

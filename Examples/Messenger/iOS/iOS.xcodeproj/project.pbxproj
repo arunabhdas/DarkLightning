@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		5C3649E85B8920A84650BBF2 /* MessengerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E890C619FFC101289CDA8D1F /* MessengerDelegate.swift */; };
 		7C05B2753FAA3893539DCE7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2122EDB53B47146D24FD9 /* AppDelegate.swift */; };
-		B419FFD41ECB536A00CB471D /* iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AED8C3BE8614721D89C0C246 /* iOS.framework */; };
-		B419FFD51ECB536A00CB471D /* iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AED8C3BE8614721D89C0C246 /* iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B419FFD41ECB536A00CB471D /* DarkLightning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AED8C3BE8614721D89C0C246 /* DarkLightning.framework */; };
+		B419FFD51ECB536A00CB471D /* DarkLightning.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AED8C3BE8614721D89C0C246 /* DarkLightning.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EBB9C43F8A21C048B5C7555C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28AEF8841B765D45552D65EF /* Foundation.framework */; };
 		F2D28419B9C1A46BC55CDB8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE62DC03E9276A0B4EBED38 /* ViewController.swift */; };
 /* End PBXBuildFile section */
@@ -67,7 +67,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B419FFD51ECB536A00CB471D /* iOS.framework in Embed Frameworks */,
+				B419FFD51ECB536A00CB471D /* DarkLightning.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B419FFD41ECB536A00CB471D /* iOS.framework in Frameworks */,
+				B419FFD41ECB536A00CB471D /* DarkLightning.framework in Frameworks */,
 				EBB9C43F8A21C048B5C7555C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,10 +122,10 @@
 		3EA80190D07ABF094A88EC5C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AED8C3BE8614721D89C0C246 /* iOS.framework */,
+				AED8C3BE8614721D89C0C246 /* DarkLightning.framework */,
 				9C66CCD970FA2299BCE5BE9F /* DarkLightning.framework */,
 				756970C09383C2C83E2161A3 /* Tests.xctest */,
-				7C3703E2E426EDD6E7F05176 /* tvOS.framework */,
+				7C3703E2E426EDD6E7F05176 /* DarkLightning.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -217,7 +217,7 @@
 				LastUpgradeCheck = 0700;
 				TargetAttributes = {
 					4F256DF20B66BC6DB879A355 = {
-						DevelopmentTeam = JAC9UTPT4U;
+						DevelopmentTeam = G7Y435RZV6;
 					};
 				};
 			};
@@ -226,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 6CB294809C6E5C536D5AD2DD;
@@ -252,7 +253,7 @@
 			remoteRef = E585E211A61C9C48CDDC7D3A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		7C3703E2E426EDD6E7F05176 /* tvOS.framework */ = {
+		7C3703E2E426EDD6E7F05176 /* DarkLightning.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = DarkLightning.framework;
@@ -266,10 +267,9 @@
 			remoteRef = 1BD0F119B70DDAE25E11F134 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		AED8C3BE8614721D89C0C246 /* iOS.framework */ = {
+		AED8C3BE8614721D89C0C246 /* DarkLightning.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			name = iOS.framework;
 			path = DarkLightning.framework;
 			remoteRef = F7ECE63B8FC6874C99F1DB1B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -315,8 +315,9 @@
 			baseConfigurationReference = 702955FB02A0A4268CA6C723 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = JAC9UTPT4U;
+				DEVELOPMENT_TEAM = G7Y435RZV6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -332,8 +333,9 @@
 			baseConfigurationReference = BB3EC1464FDFB1EB0717D9AF /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = JAC9UTPT4U;
+				DEVELOPMENT_TEAM = G7Y435RZV6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
